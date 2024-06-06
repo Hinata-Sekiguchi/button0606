@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title>ボタン</title>
+</head>
+<body>
+    <header class="header-wrapper">
+        <div class="header-inner">
+            <button class="icon" id="js-open"><img src="../img/home.png" alt="ホームに戻る"></button>
+        </div>
+    </header>
+    <main class="main-wrapper">
+        <h1 class="h1_ttl">ゲームクリア！</h1>
+        <p>ゲームクリアおめでとうございます。<br>今回のゲームで使ったギミックを紹介します。</p>
+        <h2 class="h2_ttl">- Q1 -</h2>
+        <p><a class="tab-ico" href="https://web-designer.cman.jp/javascript_ref/mouse/move/" target="_blank">&lt;move&gt;「画像やDIVをマウスで移動」</a></p>
+        <h2 class="h2_ttl">- Q2 -</h2>
+        <p>JavaScriptによるページスタート位置の指定</p>
+        <h2 class="h2_ttl">- Q3 -</h2>
+        <p>JavaScriptによる入力箇所とボタン機能のオンオフ切り替え、<br>正しいテキストの場合のみ装飾とページ遷移先の変更</p>
+        <h2 class="h2_ttl">- その他 -</h2>
+        <p>クリア進捗の保存、URL書き換えによる不正アクセスの際にトップ画面に戻る機能</p>
+        <h1 class="h1_ttl">作者のページ</h1>
+        <a class="tab-ico" href="https://serene-stonebraker-9cd571.netlify.app/">HinataPortfolio</a>
+    </main>
+    <div class="overlay close" id="js-overlay"></div>
+    <div class="modal close" id="js-modal">
+        <a class="modal-close" id="js-close"></a>
+        <p>TOPに戻りますか？<br><span>※途中データは保存されます。</span></p>
+        <a href="../index.html"><div class="top-btn">TOPに戻る</div></a>
+    </div>
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/cmanObjMove_v091.js"></script>
+</body>
+</html>

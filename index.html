@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <title>ボタン</title>
+</head>
+<body>
+    <main class="main-wrapper">
+    <div>
+        <h1 class="h1_ttl">GOボタン</h1>
+        <p>ページ内のGOボタンを見つけて、次のページに進もう！</p>
+        <p>最後まで進められたらクリアです。</p>
+        <h2 class="h2_ttl">注意事項</h2>
+        <p>推奨環境は最新版のGoogle ChromeやSafariです。</p>
+        <p>パソコン・タブレット・スマートフォンのいずれでも楽しむことができます。</p>
+        <p>プログラムの解析や検証ツールを用いたプレイは、</p>
+        <p>ゲームの楽しさを著しく損なう恐れがあるためご遠慮ください。</p>
+        <a class="btn btn_00" id="start-btn">START</a>
+        <button id="js-open" class="reset-btn">リセット</button>
+        <h1 class="h1_ttl">作者のページ</h1>
+        <a class="tab-ico" href="https://serene-stonebraker-9cd571.netlify.app/">HinataPortfolio</a>
+    </div>
+    <div class="overlay close" id="js-overlay"></div>
+    <div class="modal close" id="js-modal">
+        <a class="modal-close" id="js-close"></a>
+        <p>現在までのクリアデータを<br>リセットしますか？<br><span>※この操作は元に戻せません</span></p>
+        <button class="reset-btn" id="reset-btn">リセットする</button>
+    </div>
+</main>
+    <script src="./js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#reset-btn').on('click', function() {
+                localStorage.setItem('progress', 0);
+                alert('リセットされました');
+                location.reload();
+            });
+        });
+    </script>
+</body>
+</html>

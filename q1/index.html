@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title>ボタン</title>
+</head>
+<body>
+    <header class="header-wrapper">
+        <div class="header-inner">
+            <button class="icon" id="js-open"><img src="../img/home.png" alt="ホームに戻る"></button>
+        </div>
+    </header>
+    <main class="main-wrapper">
+        <h1 class="h1_ttl">Q1</h1>
+        <h2 class="h2_ttl">ー 動く物体 ー</h2>
+        <div class="q1_flex">
+            <div class="q1_flex-box"><div class="dummy_box" cmanOMat="move"></div></div>
+            <div class="q1_flex-box"><div class="dummy_box" cmanOMat="move"></div></div>
+            <div class="q1_flex-box"><div class="dummy_box" cmanOMat="move"></div></div>
+            <div class="q1_flex-box"><div class="dummy_box" cmanOMat="move"></div></div>
+            <div class="q1_flex-box"><div class="dummy_box" cmanOMat="move"></div><div class="btn_box"><a class="btn btn_01" id="next-btn">GO!</a></div></div>
+            <div class="q1_flex-box"><div class="dummy_box" cmanOMat="move"></div></div>
+            <div class="q1_flex-box"><div class="dummy_box" cmanOMat="move"></div></div>
+            <div class="q1_flex-box"><div class="dummy_box" cmanOMat="move"></div></div>
+            <div class="q1_flex-box"><div class="dummy_box" cmanOMat="move"></div></div>
+        </div>
+        <div class="overlay close" id="js-overlay"></div>
+        <div class="modal close" id="js-modal">
+            <a class="modal-close" id="js-close"></a>
+            <p>TOPに戻りますか？<br><span>※途中データは保存されます。</span></p>
+            <a href="../index.html"><div class="top-btn">TOPに戻る</div></a>
+        </div>
+    </main>
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/cmanObjMove_v091.js"></script>
+</body>
+</html>

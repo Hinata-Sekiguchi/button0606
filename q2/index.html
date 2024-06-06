@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <title>ボタン</title>
+</head>
+<body>
+    <header class="header-wrapper">
+        <div class="header-inner">
+            <button class="icon" id="js-open"><img src="../img/home.png" alt="ホームに戻る"></button>
+        </div>
+    </header>
+    <main class="main-wrapper">
+        <div class="top-area">
+            <a class="btn btn_02" id="next-btn">GO!</a>
+            <p>↑</p>
+            <p>↑</p>
+        </div>
+        <h1 class="h1_ttl">Q2</h1>
+        <h2 class="h2_ttl">ー 隠されたエリア ー</h2>
+        <div class="q2-area">
+            <p>↓</p>
+            <p>↓</p>
+            <p>↓</p>
+            <p>↓</p>
+            <p>↓</p>
+            <p>↓</p>
+            <p>↓</p>
+            <p>↓</p>
+            <p>↓</p>
+            <p>↓</p>
+            <p>↓</p>
+            <p>下にはありません</p>
+            <button id="up-btn">上に戻る</button>
+        </div>
+        <div class="overlay close" id="js-overlay"></div>
+        <div class="modal close" id="js-modal">
+            <a class="modal-close" id="js-close"></a>
+            <p>TOPに戻りますか？<br><span>※途中データは保存されます。</span></p>
+            <a href="../index.html"><div class="top-btn">TOPに戻る</div></a>
+        </div>
+    </main>
+    <script>
+        $(document).ready(function() {
+            $(window).scrollTop(500);
+        });
+    </script>
+    <script src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/cmanObjMove_v091.js"></script>
+</body>
+</html>
